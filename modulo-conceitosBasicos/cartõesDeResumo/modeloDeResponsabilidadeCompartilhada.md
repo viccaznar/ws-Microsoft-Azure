@@ -1,39 +1,33 @@
-**Modelos de Nuvem:**
+**O Que é:**
 
-* Definem como os recursos de nuvem são implantados.
-* Três modelos principais: Privado, Público e Híbrido.
+* Modelo que define as responsabilidades de segurança e gerenciamento entre o provedor de nuvem e o consumidor.
+* Contrasta com o modelo tradicional de data center, onde a empresa é responsável por tudo.
 
-**Nuvem Privada:**
+**Divisão de Responsabilidades:**
 
-* Infraestrutura de nuvem usada exclusivamente por uma única organização.
-* Oferece maior controle e personalização.
-* Pode ser hospedada no data center local da empresa ou em um data center dedicado externo.
-* Geralmente possui custos mais altos e menos escalabilidade em comparação com a nuvem pública.
+* **Provedor de Nuvem (Microsoft Azure):**
+    * Segurança física dos data centers.
+    * Energia e resfriamento da infraestrutura.
+    * Conectividade de rede física.
+    * Hosts físicos.
 
-**Nuvem Pública:**
+* **Consumidor (Você):**
+    * Dados e informações armazenadas na nuvem.
+    * Segurança de acesso (quem tem permissão).
+    * Dispositivos conectados à nuvem.
+    * Contas e identidades de usuários, serviços e dispositivos.
 
-* Infraestrutura de nuvem pertencente e operada por um provedor de nuvem de terceiros (ex: Microsoft Azure).
-* Serviços acessíveis ao público geral que desejar comprá-los.
-* Oferece alta escalabilidade e geralmente custos mais baixos.
+**Variações por Modelo de Serviço:**
 
-**Nuvem Híbrida:**
+* **IaaS (Infraestrutura como Serviço):** Maior responsabilidade do consumidor (SO, controles de rede, aplicativos). O provedor cuida da infraestrutura básica.
+* **PaaS (Plataforma como Serviço):** Responsabilidades divididas de forma mais equilibrada (o provedor gerencia o SO e a infraestrutura, você gerencia os aplicativos e dados).
+* **SaaS (Software como Serviço):** Maior responsabilidade do provedor (aplicativos, infraestrutura subjacente). Você se concentra no uso do software e nos dados inseridos.
 
-* Combinação de nuvens privadas e públicas que operam juntas.
-* Permite a portabilidade de dados e aplicações entre os ambientes.
-* Pode ser usada para:
-    * Escalar a capacidade da nuvem privada usando recursos da nuvem pública em momentos de pico de demanda.
-    * Adicionar uma camada extra de segurança, mantendo dados sensíveis na nuvem privada e cargas de trabalho menos críticas na nuvem pública.
-    * Flexibilidade na escolha de onde executar cada serviço.
+**Exemplo Lúdico: Condomínio vs. Casa Própria**
 
-**Exemplo Lúdico: Tipos de Moradia**
+* **Data Center Tradicional (Casa Própria):** Você é responsável por TUDO: desde a estrutura da casa (servidores), até a segurança (firewall físico), manutenção do jardim (infraestrutura), e o que você guarda dentro (dados e aplicações).
+* **Computação em Nuvem (Condomínio):**
+    * **Provedor (Administração do Condomínio):** Cuida da segurança do prédio (segurança física), energia, água (infraestrutura), e das áreas comuns (rede física, hosts).
+    * **Consumidor (Morador):** É responsável pela segurança da sua unidade (controle de acesso), pelos seus pertences (dados e informações), e pelos dispositivos que você conecta à rede do condomínio.
 
-* **Nuvem Privada (Casa Própria):** Você tem total controle sobre sua casa e como usá-la. 
-	Você decide as reformas, a segurança e quem entra. Mas a manutenção é toda sua, e expandir (construir mais quartos) pode ser caro e demorado.
-
-* **Nuvem Pública (Apartamento em um Prédio):** Você aluga um espaço em um prédio com muitos outros moradores. 
-	A administração (provedor de nuvem) cuida da estrutura, segurança básica e serviços comuns. 
-	É mais acessível e você pode mudar para um apartamento maior (escalar) mais facilmente.
-	
-* **Nuvem Híbrida (Casa com um Anexo para Alugar):** Você tem sua casa principal (nuvem privada) para suas necessidades principais
-	e um anexo (nuvem pública) que você pode usar para hospedar visitantes (picos de demanda) ou para atividades menos privadas. 
-Você tem a flexibilidade de usar os dois espaços conforme a necessidade.
+A responsabilidade sobre alguns aspectos (como reformas internas ou configurações de rede do seu apartamento) dependerá do tipo de "serviço" que você tem no condomínio. Um apartamento totalmente mobiliado (SaaS) terá menos responsabilidades para você do que um apartamento vazio (IaaS) onde você precisa trazer seus próprios móveis e eletrodomésticos.
